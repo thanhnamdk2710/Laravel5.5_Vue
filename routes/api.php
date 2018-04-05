@@ -18,6 +18,6 @@ use App\Http\Controllers\Api\V1\CompaniesController;
 //    return $request->user();
 //});
 
-Route::group(['prefix' => '/v1', 'namespace' => 'Api\V1', 'as' => 'api.'], function (){
+Route::group(['prefix' => '/v1', 'namespace' => 'Api\V1', 'as' => 'api.'], function () {
     Route::resource('companies', 'CompaniesController', ['except' => ['create', 'edit']]);
 });
